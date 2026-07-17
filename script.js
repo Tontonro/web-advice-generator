@@ -8,7 +8,7 @@ async function fetchAdvice() {
     adviceTextElement.innerText = 'Loading...';
     
     try {
-        const response = await fetch('https://api.adviceslip.com/advice?=${Date.now()}');
+        const response = await fetch('https://api.adviceslip.com/advice', { cache: 'no-store' });
         const data = await response.json();
 
         adviceIdElement.innerText = `"Advice #${data.slip.id}`;
