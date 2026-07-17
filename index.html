@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Advice</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 flex flex-col items-center justify-center min-h-screen p-4 text-slate-800 font-sans">
+
+    <div class="mb-6" id="google.translate.element"></div>
+    <header>
+        <h1 class="text-4xl font-bold text-slate-900 mb-6">Welcome to my website for advices</h1>
+        <p>This is a simple website for providing web advices using the API adviceSlip</p>
+    </header>
+
+    <main class="w-full max-w-md">
+        <section class="card p-8 bg-white rounded-2xl shadow-xl border border-slate-200 text-center flex flex-col">
+            <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-500 mb-4" id="advice-id">Advice #--</h2>
+            <p class="text-xl font-medium text-slate-800 mb-8 italic px-2" id="advice-text">Click the button to get advice</p>
+            <button class="bg-indigo-600 text-white font-bold py-3 px-8 rounded-full hover:bg-indigo-700 transition" id="advice-btn">Get Advice</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'pt,es,en',
+                layout: google.translate.TranslateElement.InlineLayout.simple
+            }, 'google.translate.element');
+        }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
