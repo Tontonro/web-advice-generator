@@ -1,6 +1,6 @@
 # Web Advice Generator
 
-Gerador de conselhos aleatórios para estudo de consumo de APIs.
+Gerador de conselhos aleatórios para estudo de consumo de APIs com tradução.
 
 ---
 
